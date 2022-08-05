@@ -1,4 +1,4 @@
-import { getDefaultNormalizer } from "@testing-library/react";
+
 import React,{useState} from "react";
 import { useEffect } from "react";
 import Card from "./Card";
@@ -29,17 +29,19 @@ const Main=()=>{
         <>
             <div className="header">
               
-                <form>
+                
                     <div className="search">
-                        <input type="text" placeholder="" 
-                        className="form-control" onChange={(e)=>{setSearch(e.target.value)}} 
+                        <input type="text" placeholder="Search movies..." 
+                        className="search-input" onChange={(e)=>{setSearch(e.target.value)}} 
                         value={search} onKeyPress={searchMovie}>
                         </input>
-                        <button className="btn btn-primary"><i className="fas fa-search"></i></button>
+                        <button className="btn btn-primary"><span class="fa fa-search"></span></button>
                     </div>
-                </form>
+                
             </div>
             <div className="container">
+
+                
                 {
                     (movieData.length==0)?<p className="notfound">Not Found</p>: movieData.map((res,pos)=>{
                         return(
