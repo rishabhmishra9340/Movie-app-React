@@ -18,12 +18,12 @@ const Main=()=>{
 
    
     const searchMovie=(evt)=>{
-        if(evt.key=="Enter")
-        {
+       
+        
             url=base_url+"/search/movie?api_key=db95773a7fb212ba790d71f6adac0e7e&query="+search;
             setUrl(url);
             setSearch(" ");
-        }
+        
     }
     return(
         <>
@@ -33,9 +33,9 @@ const Main=()=>{
                     <div className="search">
                         <input type="text" placeholder="Search movies..." 
                         className="search-input" onChange={(e)=>{setSearch(e.target.value)}} 
-                        value={search} onKeyPress={searchMovie}>
+                        value={search} >
                         </input>
-                        <button className="btn btn-primary"><span class="fa fa-search"></span></button>
+                        <button className="btn btn-primary" onClick={searchMovie}><span class="fa fa-search"></span></button>
                     </div>
                 
             </div>
