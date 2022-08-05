@@ -1,0 +1,30 @@
+
+
+
+#heading{
+    text-align: center;
+}
+.form-group{
+    text-align: center;
+    margin-top: 30px;
+}
+
+#name{
+    margin-left: 223px;
+}
+
+#email{
+    margin-left: 228px;
+}
+
+#pass{
+    margin-left: 200px;
+}
+
+#phone{
+    margin-left: 193px;
+}
+#btn{
+    text-align: center;
+    margin-top: 40px;
+}
